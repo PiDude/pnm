@@ -8,7 +8,7 @@ git add .
 
 git commit -m "date"
 
-git remote add origin https://github.com/PiDUde.git
+git remote add origin https://github.com/PiDUde/repository.git
 
 git push -u origin master
 

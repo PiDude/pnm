@@ -23,6 +23,14 @@ noise = np.random.normal(0, 1, 2048)
 
 nsig3 = sig3 + noise
 
+
+
+with open('file.csv', newline='') as csvfile:
+    spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
+    for row in spamreader:
+        print(row)
+
+
 plt.subplot(2,1,1)
 plt.plot(nsig3)
 plt.xlabel('time')
